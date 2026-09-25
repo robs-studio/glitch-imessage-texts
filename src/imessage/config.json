@@ -1,0 +1,14 @@
+{
+  "_readme": "Shipped settings for the iMessage intake plug-in; every key below is explained in plain words in the module docstring at the top of imconfig.py, and your own private keys (own_handles, never_ingest) belong in config.local.json instead.",
+
+  "substance_min_turns": 2,
+  "substance_min_senders": 2,
+  "substance_min_chars": 20,
+
+  "max_stamps_per_run": 200,
+  "budget_margin_s": 3.0,
+  "backfill_tranche_days": 30,
+
+  "synth_stale_days": 3,
+  "synth_claim_limit": 15
+}

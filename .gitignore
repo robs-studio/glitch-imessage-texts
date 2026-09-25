@@ -10,3 +10,8 @@ client_secret*.json
 .mcp.json
 *.mcp.json
 .mcp.local.json
+# Release builder: the private denylist and build output never enter the repo.
+.release-denylist
+dist/
+__pycache__/
+*.pyc

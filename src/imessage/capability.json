@@ -1,0 +1,8 @@
+{
+  "name": "imessage",
+  "kind": "provider",
+  "feeds_into": "person",
+  "summary": "your texts — each conversation-day filed onto the right person's card",
+  "way_in": "bring my texts in",
+  "stages": { "morning": { "argv": ["imdaily.py"], "timeout_s": 20 } }
+}

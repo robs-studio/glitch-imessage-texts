@@ -1,0 +1,14 @@
+# Private data — never leaves this machine.
+# Committed FIRST, before any data file can exist. Reversing that order is the defect.
+threads/
+synth/
+pre-backfill/
+state.json
+ledger.json
+ledger.wal
+ledger.lock
+config.local.json
+.env
+__pycache__/
+*.pyc
+.DS_Store

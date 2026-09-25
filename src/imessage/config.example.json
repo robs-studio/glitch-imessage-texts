@@ -1,0 +1,10 @@
+{
+  "_readme": "Copy this file to config.local.json in the same folder and replace the placeholders with your real values. config.local.json is gitignored and left out of backup, so it never leaves this machine; this example file is the committed one and must never hold a real number or address. own_handles is required: until it lists your own numbers and addresses, the daily and backfill runs refuse to start, because your own outbound texts would otherwise be logged onto your own card as if someone else had said them.",
+
+  "own_handles": [
+    "+15555550123",
+    "you@example.com"
+  ],
+
+  "never_ingest": []
+}

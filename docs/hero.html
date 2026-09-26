@@ -1,0 +1,121 @@
+<!doctype html>
+<!-- Source for docs/hero.png (1280x640). Every name and number here is invented.
+     Render: Chrome --headless --screenshot=docs/hero.png --window-size=1280,640 docs/hero.html -->
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1280px; height: 640px; overflow: hidden; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+    background: radial-gradient(1200px 640px at 20% 0%, #eef3ff 0%, #f6f6f8 55%, #f1f0ee 100%);
+    color: #1d1d1f;
+    -webkit-font-smoothing: antialiased;
+  }
+  .title { position: absolute; left: 64px; top: 44px; }
+  .title h1 { font-size: 34px; font-weight: 700; letter-spacing: -0.02em; }
+  .title p { margin-top: 8px; font-size: 18px; color: #6e6e73; }
+
+  /* the phone */
+  .phone {
+    position: absolute; left: 64px; top: 142px; width: 468px; height: 440px;
+    background: #fff; border-radius: 30px;
+    box-shadow: 0 1px 2px rgba(0,0,0,.06), 0 18px 40px rgba(20,30,60,.12);
+    overflow: hidden;
+  }
+  .ph-head { height: 86px; border-bottom: 1px solid #ececf0; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #fafafa; }
+  .avatar { width: 38px; height: 38px; border-radius: 50%; background: linear-gradient(160deg, #a7b0bf, #7d8696); color: #fff; font-weight: 600; font-size: 15px; display: flex; align-items: center; justify-content: center; }
+  .ph-name { margin-top: 5px; font-size: 13px; color: #1d1d1f; }
+  .thread { padding: 16px 18px; }
+  .stamp { text-align: center; font-size: 11.5px; color: #8e8e93; margin: 2px 0 12px; }
+  .row { display: flex; margin: 5px 0; }
+  .row.me { justify-content: flex-end; }
+  .b { max-width: 300px; padding: 9px 14px; border-radius: 19px; font-size: 16px; line-height: 1.3; }
+  .them .b { background: #e9e9eb; color: #000; border-bottom-left-radius: 6px; }
+  .me .b { background: #0b84fe; color: #fff; border-bottom-right-radius: 6px; }
+  .delivered { text-align: right; font-size: 11px; color: #8e8e93; margin-top: 2px; }
+
+  /* the arrow */
+  .flow { position: absolute; left: 548px; top: 318px; width: 130px; text-align: center; }
+  .flow .arrow { font-size: 40px; color: #0b84fe; line-height: 1; }
+  .flow .cap { margin-top: 8px; font-size: 13px; color: #6e6e73; line-height: 1.35; }
+
+  /* the card */
+  .card {
+    position: absolute; left: 694px; top: 142px; width: 522px; height: 440px;
+    background: #fff; border-radius: 22px; padding: 26px 28px;
+    box-shadow: 0 1px 2px rgba(0,0,0,.06), 0 18px 40px rgba(20,30,60,.12);
+  }
+  .c-top { display: flex; align-items: center; gap: 14px; }
+  .c-avatar { width: 48px; height: 48px; border-radius: 14px; background: linear-gradient(160deg, #a7b0bf, #7d8696); color: #fff; font-weight: 600; font-size: 18px; display: flex; align-items: center; justify-content: center; }
+  .c-name { font-size: 22px; font-weight: 650; letter-spacing: -0.01em; }
+  .c-meta { font-size: 13.5px; color: #6e6e73; margin-top: 3px; }
+  .c-sec { margin-top: 22px; font-size: 12px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: #8e8e93; }
+  .item { display: flex; gap: 14px; padding: 13px 0; border-bottom: 1px solid #f0f0f3; }
+  .item:last-child { border-bottom: 0; }
+  .date { width: 58px; flex: none; font-size: 13px; color: #6e6e73; padding-top: 2px; }
+  .tag { display: inline-block; font-size: 11.5px; font-weight: 600; padding: 2px 8px; border-radius: 999px; margin-bottom: 5px; }
+  .tag.texts { background: #e3efff; color: #0a5fd1; }
+  .tag.email { background: #f1f1f4; color: #6e6e73; }
+  .tag.meet { background: #f1f1f4; color: #6e6e73; }
+  .txt { font-size: 15px; line-height: 1.42; color: #1d1d1f; }
+  .old .txt { color: #8e8e93; }
+  .new { background: linear-gradient(90deg, rgba(11,132,254,.07), rgba(11,132,254,0)); margin: 0 -12px; padding: 13px 12px; border-radius: 12px; border-bottom: 0; }
+  .link { margin-top: 6px; font-size: 13px; color: #0a5fd1; }
+  .foot { position: absolute; left: 64px; bottom: 26px; font-size: 13px; color: #8e8e93; }
+</style>
+</head>
+<body>
+  <div class="title">
+    <h1>Every text conversation, filed onto the right person's card.</h1>
+    <p>A plug-in for Glitch. Read-only, and your conversations never leave your Mac.</p>
+  </div>
+
+  <div class="phone">
+    <div class="ph-head"><div class="avatar">SC</div><div class="ph-name">Sarah Chen</div></div>
+    <div class="thread">
+      <div class="stamp">Thursday 4:12 PM</div>
+      <div class="row them"><div class="b">Any chance we can move tomorrow's planning call to 4?</div></div>
+      <div class="row me"><div class="b">Works for me. I'll send the updated agenda tonight.</div></div>
+      <div class="row them"><div class="b">Perfect. Can you add the budget numbers too?</div></div>
+      <div class="row me"><div class="b">Will do, see you at 4 👍</div></div>
+      <div class="delivered">Delivered</div>
+    </div>
+  </div>
+
+  <div class="flow">
+    <div class="arrow">&rarr;</div>
+    <div class="cap">the next morning,<br>on its own</div>
+  </div>
+
+  <div class="card">
+    <div class="c-top">
+      <div class="c-avatar">SC</div>
+      <div>
+        <div class="c-name">Sarah Chen</div>
+        <div class="c-meta">Work · Planning lead</div>
+      </div>
+    </div>
+    <div class="c-sec">Interactions</div>
+    <div class="item new">
+      <div class="date">Sep 24</div>
+      <div>
+        <span class="tag texts">Texts</span>
+        <div class="txt">Sarah asked to move Friday's planning call to 4pm. You agreed and will send the updated agenda with the budget numbers tonight.</div>
+        <div class="link">Open the full conversation</div>
+      </div>
+    </div>
+    <div class="item old">
+      <div class="date">Sep 19</div>
+      <div><span class="tag email">Email</span><div class="txt">Q4 planning kickoff: draft timeline</div></div>
+    </div>
+    <div class="item old">
+      <div class="date">Sep 12</div>
+      <div><span class="tag meet">Meeting</span><div class="txt">Planning sync with the ops team</div></div>
+    </div>
+  </div>
+
+  <div class="foot">github.com/robs-studio/glitch-imessage-texts</div>
+</body>
+</html>

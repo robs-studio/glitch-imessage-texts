@@ -1,5 +1,7 @@
 # iMessage texts for Glitch
 
+![A text chat with Sarah Chen on the left; on the right, her Glitch card the next morning, with that day's texts summarised as one new line above her older email and meeting lines.](docs/hero.png)
+
 A plug-in for Glitch, the local-first AI second brain, that files every text conversation onto the right person's card.
 
 **What is Glitch?** Glitch is not publicly available.
